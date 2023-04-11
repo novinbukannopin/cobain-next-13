@@ -4,9 +4,10 @@ import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
   variable: "--poppins-font",
-  weight: ["400", "500", "600"],
+  weight: ["400"],
   subsets: ["latin"],
 });
+
 export default function RootLayout({
   children,
 }: {
@@ -22,7 +23,7 @@ export default function RootLayout({
           style={{
             display: "flex",
             flexDirection: "row",
-            gap: "25px",
+            gap: "35px",
             listStyleType: "none",
           }}
         >
@@ -32,19 +33,39 @@ export default function RootLayout({
             </Link>
           </li>
           <li>
-            <Link href="/dashboard">Dashboard</Link>
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              href="/dashboard"
+            >
+              Dashboard
+            </Link>
           </li>
           <li>
-            <Link href="/settings">Settings</Link>
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              href="/settings"
+            >
+              Settings
+            </Link>
           </li>
           <li>
-            <Link href="/calculator">Calculator</Link>
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              href="/calculator"
+            >
+              Calculator
+            </Link>
           </li>
           <li>
-            <Link href="/search">Search</Link>
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              href="/search"
+            >
+              Search
+            </Link>
           </li>
         </ul>
-        <div className="" style={{ marginLeft: "40px" }}>
+        <div className={poppins.className} style={{ marginLeft: "40px" }}>
           {children}
         </div>
       </body>

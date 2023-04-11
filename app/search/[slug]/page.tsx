@@ -17,7 +17,7 @@ export default async function DetailUserPage({
       <div className="">Username : {data.login}</div>
       <img src={data.avatar_url} width={50} alt="" />
       <div className="">User ID : {data.id}</div>
-      <div className="">Bio : {data.bio}</div>
+      <div className="">Bio : {data.bio ? data.bio : "-"}</div>
       <div className="">Repos : {data.public_repos}</div>
       <div className="">Following : {data.following}</div>
       <div className="">Followers : {data.followers}</div>
