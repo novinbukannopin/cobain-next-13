@@ -17,7 +17,7 @@ export default function SearchPage() {
           <input placeholder="Cari orang" />
           <button>Search</button>
         </form>
-        <SectionResult query={query} />
+        {query && <SectionResult query={query} />}
       </div>
     </div>
   );
