@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import PageTitle from "../component/PageTitle";
 
 export default function Calculator() {
   const [angka1, setAngka1] = useState(0);
@@ -7,7 +8,7 @@ export default function Calculator() {
   const [hasil, setHasil] = useState(0);
   return (
     <div>
-      Calculator
+      <PageTitle title={"Calculator"} />
       <div className="">
         <input
           placeholder="Angka 1 "
